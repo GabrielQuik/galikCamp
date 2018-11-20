@@ -1,75 +1,96 @@
 body {
-    color: #ffffff;
-    background-color: #1f1f1f;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  min-width: 1140px;
 }
 
 p {
-    line-height: 29px;
-    text-align: center;
-    font-size: 23px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-img {
-    position: fixed;
-    width: 100%;
-    top: -160px;
-    filter: brightness(40%);
+.header_background {
+  background: url("../images/topImg.jpg") no-repeat center -245px;
+  width: inherit;
+  height: 100vh;
+  position: fixed;
+  background-size: cover;
+  filter: brightness(40%);
 }
 
 .maven {
-    font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .lato {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .toUpperCase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw; /* 100%?? */
+  margin: 0 auto;
 }
 
 .component {
-    z-index: 2;
+  z-index: 2;
+}
+
+.component header {
+  text-align: center;
+  font-weight: bold;
 }
 
 .component:not(.header) header {
-    font-size: 50px;
+  font-size: 60px;
 }
 
 .header {
-    height: 100vh;
+  height: 100vh;
 }
 
 .header header {
-    margin-top: 20vh;
-    text-align: center;
-    font-size: 80px;
-    font-weight: bold;
+  margin-top: 20vh;
+  font-size: 80px;
 }
 
 .registry_button {
-    background-color: #ffffff;
-    border: none;
-    color: #1f1f1f;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 100px;
+  background-color: #ffffff;
+  border: none;
+  color: #1f1f1f;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 30vw;
+  padding: 10px 5vw;
 }
 
-.info, .team, .location, .map, .contact {
-    background-color: #1f1f1f;
-    width: 98vw;
+.info_button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 250px 32vw 0 32vw;
+  padding: 0;
+  width: 16vw;
+}
+
+.info,
+.team,
+.location,
+.map,
+.contact {
+  background-color: #1f1f1f;
 }
 
 /* #1f1f1f */
