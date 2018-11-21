@@ -12,13 +12,35 @@ p {
   margin-bottom: 30px;
 }
 
-.header_background {
-  background: url("../images/topImg.jpg") no-repeat center -245px;
-  width: inherit;
+button {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#header_background {
+  background: url(../images/topImg.jpg) no-repeat center -245px;
+  width: 100%;
   height: 100vh;
   position: fixed;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   filter: brightness(40%);
+}
+
+#stairs_background {
+  background: url(../images/stairsImg.jpg) no-repeat center;
+  width: 100%;
+  height: 60vh;
+  padding-top: 140px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .maven {
@@ -38,12 +60,14 @@ p {
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
-  width: 80vw; /* 100%?? */
+  width: 100%;
   margin: 0 auto;
 }
 
 .component {
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .component header {
@@ -53,6 +77,8 @@ p {
 
 .component:not(.header) header {
   font-size: 60px;
+  margin-top: 130px;
+  margin-bottom: 50px;
 }
 
 .header {
@@ -70,7 +96,7 @@ p {
   color: #1f1f1f;
   font-size: 20px;
   font-weight: bold;
-  margin: 0 30vw;
+  margin: 0 auto;
   padding: 10px 5vw;
 }
 
@@ -80,9 +106,51 @@ p {
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
-  margin: 250px 32vw 0 32vw;
+  margin: 29vh auto 0 auto; /* fix vertically when shrinking */
   padding: 0;
-  width: 16vw;
+  width: auto;
+}
+
+.info-subtitle {
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-list-item {
+  display: flex;
+}
+
+.team-member {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.team-member p {
+  text-align: left;
+}
+
+.profile_picture {
+  background: tomato;
+  height: 200px;
+  width: 200px;
+  margin: 30px 65px;
+}
+
+.name {
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .info,
@@ -91,6 +159,17 @@ p {
 .map,
 .contact {
   background-color: #1f1f1f;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#day-plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 23px;
 }
 
 /* #1f1f1f */
