@@ -8,7 +8,19 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700|Maven+Pro:700"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.paroller.min.js"></script>
     <title>Galik Camp</title>
   </head>
   <body>
@@ -26,7 +38,7 @@
         </p>
         <button class="registry_button lato toUpperCase">rejestracja</button>
         <button class="info_button lato toUpperCase">
-          więcej informacji<br />v
+          więcej informacji <i class="fas fa-angle-down"></i>
         </button>
       </div>
       <div class="component info">
@@ -62,7 +74,7 @@
           </li>
         </ul>
       </div>
-      <div id="stairs_background"></div>
+      <div id="stairs_background" class="paroller"></div>
       <div class="component team">
         <header class="maven toUpperCase">nasz team</header>
         <div class="team-list">
@@ -72,46 +84,56 @@
               <div class="team-member">
                 <div class="name lato toUpperCase">Michał Galikowski</div>
                 <p class="lato description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
                   Dolor sunt maiores libero explicabo dignissimos eligendi eos
                   consequatur
                 </p>
               </div>
             </li>
             <li class="team-list-item">
-                <div class="profile_picture"></div>
-                <div class="team-member">
-                  <div class="name lato toUpperCase">Michał Galikowski</div>
-                  <p class="lato description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Dolor sunt maiores libero explicabo dignissimos eligendi eos
-                    consequatur
-                  </p>
-                </div>
-              </li>
-              <li class="team-list-item">
-                  <div class="profile_picture"></div>
-                  <div class="team-member">
-                    <div class="name lato toUpperCase">Michał Galikowski</div>
-                    <p class="lato description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                      Dolor sunt maiores libero explicabo dignissimos eligendi eos
-                      consequatur
-                    </p>
-                  </div>
-                </li>
+              <div class="profile_picture"></div>
+              <div class="team-member">
+                <div class="name lato toUpperCase">Michał Galikowski</div>
+                <p class="lato description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Dolor sunt maiores libero explicabo dignissimos eligendi eos
+                  consequatur
+                </p>
+              </div>
+            </li>
+            <li class="team-list-item">
+              <div class="profile_picture"></div>
+              <div class="team-member">
+                <div class="name lato toUpperCase">Michał Galikowski</div>
+                <p class="lato description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Dolor sunt maiores libero explicabo dignissimos eligendi eos
+                  consequatur
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
       <div class="component location">
         <header class="maven toUpperCase">lokalizacja</header>
+        <div class="location_images"></div>
       </div>
 
       <div class="component map"></div>
 
       <div class="component contact">
         <header class="maven toUpperCase">kontakt</header>
+        <p class="lato">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Commodi cum provident et, minima asperiores quam? Iure iste culpa ad
+          voluptates nisi rem impedit optio, rerum amet facilis error odio quam.
+        </p>
       </div>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>

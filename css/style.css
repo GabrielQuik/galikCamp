@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #ffffff;
   background-color: #1f1f1f;
   min-width: 1140px;
+  letter-spacing: 2px;
 }
 
 p {
@@ -98,17 +103,29 @@ ul {
   font-weight: bold;
   margin: 0 auto;
   padding: 10px 5vw;
+  outline: none;
+}
+
+.registry_button:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 .info_button {
+  padding: 0;
+  margin: auto auto 40px auto;
   background: none;
   border: none;
   color: #ffffff;
   font-size: 20px;
-  font-weight: bold;
-  margin: 29vh auto 0 auto; /* fix vertically when shrinking */
-  padding: 0;
+  font-weight: bold; /* fix vertically when shrinking */
   width: auto;
+  outline: none;
+  flex-direction: inherit;
+  align-items: center;
+}
+
+.info_button i {
+  position: relative;
 }
 
 .info-subtitle {
@@ -151,6 +168,18 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.location_images {
+  display: grid;
+}
+
+.map {
+  height: 50%;
+}
+
+.contact {
+  padding-bottom: 100px;
 }
 
 .info,
